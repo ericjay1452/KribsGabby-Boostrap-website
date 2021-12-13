@@ -1,0 +1,153 @@
+@media (max-width : 1000px) {
+    .siteLayer {
+        display: block !important;
+    }
+    .videoContent {
+        width:  100% !important;
+    }
+    .categoriesContent {
+        width:  80% !important;
+        margin: auto !important;
+    }
+
+    .container2 {
+        width:  100% !important;
+    }
+}
+
+@media(max-width : 990px) {
+    #Bug {
+        display:  block !important;
+        width: 50px !important;
+        cursor: pointer !important;
+        height: 50px !important;
+        margin-right: 3px !important;
+        text-align: center !important;
+        z-index: 500 !important;
+    }
+
+    .burger {
+        position: absolute;
+        left: 50px;
+        top: 0px;
+        cursor: pointer;
+        height: inherit;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .burger-line {
+        width: 20px;
+        height: 4px;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        text-align: center;
+        background: white;
+    }
+
+    .burger-line::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 4px;
+        position: absolute;
+        bottom: -10px;
+        transform: rotate(0deg);
+        background: inherit;
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    }
+
+    .burger-line::after {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 4px;
+        position: absolute;
+        bottom: 10px;
+        background: inherit;
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    }
+
+        /* My js effect for rotating my #Bug */
+        .slideIn {
+            transition: all ease-in-out .6s;
+        }
+    
+        .burger-line.slideIn::before {
+            width: 15px;
+            transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+    
+        .burger-line.slideIn::after {
+            width: 30px;
+            transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+    #collapseContainer {
+    position: absolute;
+    z-index: 10;
+    display: block;
+    width: 0%;
+    top: 60px;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    transition: all 0.6s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s;
+    }
+
+    .listwrapper {
+        position: fixed;
+        z-index: 10;
+        left:  -100px;
+        width: 0%;
+        top: 65px;
+        height: 100vh;
+        background: #EFF6E0;
+        transition: all .4s ease-in;
+    }
+
+    .listwrapper.In {
+        left:  0;
+        width:  50%;
+        transition:  all .4s ease-in;
+    }
+
+    .mobilelist {
+        list-style-type: none;
+    position: relative;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: left;
+    padding-left:  25px;
+    width: 100%;
+    transition: all .4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s;
+    }
+
+    .mobilelist.view {
+        display: flex !important;
+    }
+
+
+    .mobile-link {
+        color:  black;
+        font-size: 0.9em;
+        display: block;
+        text-decoration: none;
+        padding-bottom:  35px;
+        padding-top:  20px;
+    }
+
+    .subscribeFeed {
+        display: block;
+        width:  100%;
+    }
+
+    .subscribeFeed .newsLetter {
+        width:  100%;
+    }
+
+    .subscribeFeed .socialMedia {
+        width:  100%;
+    }
+}
